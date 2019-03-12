@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Pierre répond à toutes vos questions...</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div class="app">
+		<div class="form-row">
+			<label for="petition">Demande : </label>
+            <input type="text" id="petition">
+        </div>
+        <div class="form-row">
+            <label for="question">Question : </label>
+            <input type="text" id="question">
+        </div>
+        <div class="buttons">
+            <button id="answerButton">Demander</button>
+            <button id="resetButton">Réinitialiser</button>
+        </div>
+        <div id="loading">
+            <div id="loading-inside"></div>
+        </div>
+        <h2 id="answer"></h2>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
