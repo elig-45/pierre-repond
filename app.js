@@ -19,7 +19,7 @@ var controller = {
         } else if (e.key.length === 1 && model.answerToggle) { // If its a character and in answer mode
             model.answer += e.key;
             document.getElementById('petition').value += model.petitionText[len];
-            console.log(model.answer);
+            
             return false;
         } else if (e.key === "Backspace" && model.answerToggle) { // if its a backpace
             model.answer = model.answer.slice(0,-1);
@@ -145,11 +145,11 @@ var view = {
         var barInside = document.getElementById('loading-inside');
         var progress = 0;
         var interval = setInterval(incr, 10/*randominterval*/);
-        console.log('button  clicked');
+        
         bar.style.display = "block";
 
         function incr() {
-            console.log('test');
+            
             if(progress >= 100) {
                 bar.style.display = "none";
                 view.showAnswer();
